@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <script>
+  var ElementlerArray = [1,2,3,4,5],
+  Enboyuk = -Infinity,
+  Novbeti_boyuk = -Infinity,
+  Enkicik = -Infinity,
+  Novbeti_kicik = -Infinity
+  for (var i = 0, n = ElementlerArray.length; i < n;i++) {
+      var nr = +ElementlerArray[i];
+
+      if (nr > Enboyuk) {
+          Novbeti_boyuk = Enboyuk;
+          Enboyuk = nr;
+      } else if (nr < Enboyuk && nr > Novbeti_boyuk) {
+          Novbeti_boyuk = nr;
+      }
+  }
+console.log(Novbeti_boyuk);
+</script>
+</body>
+</html>
